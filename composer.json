@@ -1,0 +1,49 @@
+{
+  "name": "localheinz/phpunit-framework-constraint",
+  "type": "library",
+  "description": "Provides additional constraints and assertions for phpunit/phpunit",
+  "keywords": [
+    "phpunit",
+    "assertion",
+    "constraint"
+  ],
+  "homepage": "https://github.com/localheinz/phpunit-framework-constraint",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "infection/infection": "~0.10.5",
+    "localheinz/composer-normalize": "~0.8.0",
+    "localheinz/php-cs-fixer-config": "~1.15.0",
+    "localheinz/test-util": "~0.7.0",
+    "phpbench/phpbench": "~0.14.0",
+    "phpstan/phpstan": "~0.10.3",
+    "phpstan/phpstan-strict-rules": "~0.10.1",
+    "phpunit/phpunit": "^7.3.5"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Localheinz\\PHPUnit\\Framework\\Constraint\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Localheinz\\PHPUnit\\Framework\\Constraint\\Test\\": "test/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/localheinz/phpunit-framework-constraint/issues",
+    "source": "https://github.com/localheinz/phpunit-framework-constraint"
+  }
+}
