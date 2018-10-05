@@ -1,2 +1,8 @@
 includes:
 	- vendor/phpstan/phpstan-strict-rules/rules.neon
+
+parameters:
+	ignoreErrors:
+		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\JsonIdentical::additionalFailureDescription\(\) has parameter \$other with no typehint specified.#'
+		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\JsonIdentical::failureDescription\(\) has parameter \$other with no typehint specified.#'
+		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\JsonIdentical::matches\(\) has parameter \$other with no typehint specified.#'

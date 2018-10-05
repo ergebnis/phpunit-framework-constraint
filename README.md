@@ -15,6 +15,33 @@ Run
 $ composer require localheinz/phpunit-framework-constraint
 ```
 
+## Usage
+
+Import the `Localheinz\PHPUnit\Framework\Constraint\Provider` trait into your test class:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace Foo\Bar\Test\Unit;
+
+use Localheinz\PHPUnit\Framework\Constraint\Provider;
+use PHPUnit\Framework\TestCase;
+
+final class BazTest extends TestCase
+{
+    use Provider;
+}
+```
+
+### Assertions
+
+In addition to the assertions made available by extending from `PHPUnit\Framework\TestCase`,
+the `Provider` trait provides the following assertions:
+
+* `assertJsonStringSameAsJsonString(string $expected, string $actual, string $message = ''): void`
+
 ## Contributing
 
 Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
