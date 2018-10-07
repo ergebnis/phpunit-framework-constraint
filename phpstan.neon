@@ -3,6 +3,6 @@ includes:
 
 parameters:
 	ignoreErrors:
-		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\JsonIdentical::additionalFailureDescription\(\) has parameter \$other with no typehint specified.#'
-		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\JsonIdentical::failureDescription\(\) has parameter \$other with no typehint specified.#'
-		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\JsonIdentical::matches\(\) has parameter \$other with no typehint specified.#'
+		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\IsIdenticalJson::additionalFailureDescription\(\) has parameter \$other with no typehint specified.#'
+		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\IsIdenticalJson::failureDescription\(\) has parameter \$other with no typehint specified.#'
+		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\IsIdenticalJson::matches\(\) has parameter \$other with no typehint specified.#'

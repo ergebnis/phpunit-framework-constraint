@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Localheinz\PHPUnit\Framework\Constraint\Test\Unit;
 
-use Localheinz\PHPUnit\Framework\Constraint\JsonIdentical;
+use Localheinz\PHPUnit\Framework\Constraint\IsIdenticalJson;
 use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
 use SebastianBergmann\Exporter;
@@ -21,13 +21,13 @@ use SebastianBergmann\Exporter;
 /**
  * @internal
  */
-final class JsonIdenticalTest extends Framework\TestCase
+final class IsIdenticalJsonTest extends Framework\TestCase
 {
     use Helper;
 
     public function testExtendsConstraint(): void
     {
-        $this->assertClassExtends(Framework\Constraint\Constraint::class, JsonIdentical::class);
+        $this->assertClassExtends(Framework\Constraint\Constraint::class, IsIdenticalJson::class);
     }
 
     public function testEvaluateReturnsNullWhenValuesAreIdentical(): void
@@ -39,7 +39,7 @@ final class JsonIdenticalTest extends Framework\TestCase
 }
 JSON;
 
-        $constraint = new JsonIdentical($value);
+        $constraint = new IsIdenticalJson($value);
 
         $this->assertNull($constraint->evaluate($value));
     }
@@ -56,7 +56,7 @@ JSON;
         $description = $this->faker()->sentence;
         $returnResult = true;
 
-        $constraint = new JsonIdentical($value);
+        $constraint = new IsIdenticalJson($value);
 
         $this->assertTrue($constraint->evaluate(
             $value,
@@ -81,7 +81,7 @@ JSON;
 }
 JSON;
 
-        $constraint = new JsonIdentical($value);
+        $constraint = new IsIdenticalJson($value);
 
         $this->expectException(Framework\ExpectationFailedException::class);
         $this->expectExceptionMessage('Failed asserting that two JSON strings are identical.');
@@ -97,7 +97,7 @@ JSON;
     "bar": "baz"
 }
 JSON;
-        $constraint = new JsonIdentical($value);
+        $constraint = new IsIdenticalJson($value);
 
         $exporter = new Exporter\Exporter();
 

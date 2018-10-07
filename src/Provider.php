@@ -22,7 +22,7 @@ trait Provider
 
         static::assertThat(
             $actual,
-            new JsonIdentical($expected),
+            new IsIdenticalJson($expected),
             $message
         );
     }

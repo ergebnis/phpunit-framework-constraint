@@ -16,7 +16,7 @@ namespace Localheinz\PHPUnit\Framework\Constraint;
 use PHPUnit\Framework;
 use SebastianBergmann\Diff;
 
-final class JsonIdentical extends Framework\Constraint\Constraint
+final class IsIdenticalJson extends Framework\Constraint\Constraint
 {
     /**
      * @var Diff\Differ
