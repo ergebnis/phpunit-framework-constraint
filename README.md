@@ -42,6 +42,10 @@ the `Provider` trait provides the following assertions:
 
 * `assertJsonStringSameAsJsonString(string $expected, string $actual, string $message = ''): void`
 
+## Changelog
+
+Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
+
 ## Contributing
 
 Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
