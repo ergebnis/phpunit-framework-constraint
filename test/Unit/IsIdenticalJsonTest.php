@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * Copyright (c) 2018 Andreas Möller.
+ * Copyright (c) 2018 Andreas Möller
  *
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
@@ -20,6 +20,8 @@ use SebastianBergmann\Exporter;
 
 /**
  * @internal
+ *
+ * @covers \Localheinz\PHPUnit\Framework\Constraint\IsIdenticalJson
  */
 final class IsIdenticalJsonTest extends Framework\TestCase
 {
@@ -41,7 +43,7 @@ JSON;
 
         $constraint = new IsIdenticalJson($value);
 
-        $this->assertNull($constraint->evaluate($value));
+        self::assertNull($constraint->evaluate($value));
     }
 
     public function testEvaluateWithReturnResultReturnsTrueWhenValuesAreIdentical(): void
@@ -58,7 +60,7 @@ JSON;
 
         $constraint = new IsIdenticalJson($value);
 
-        $this->assertTrue($constraint->evaluate(
+        self::assertTrue($constraint->evaluate(
             $value,
             $description,
             $returnResult
@@ -106,6 +108,6 @@ JSON;
             $exporter->export($value)
         );
 
-        $this->assertSame($expected, $constraint->toString());
+        self::assertSame($expected, $constraint->toString());
     }
 }

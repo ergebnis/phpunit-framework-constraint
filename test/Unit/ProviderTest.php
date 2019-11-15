@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * Copyright (c) 2018 Andreas Möller.
+ * Copyright (c) 2018 Andreas Möller
  *
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
@@ -19,6 +19,10 @@ use PHPUnit\Framework;
 
 /**
  * @internal
+ *
+ * @covers \Localheinz\PHPUnit\Framework\Constraint\Provider
+ *
+ * @uses \Localheinz\PHPUnit\Framework\Constraint\IsIdenticalJson
  */
 final class ProviderTest extends Framework\TestCase
 {
@@ -38,7 +42,7 @@ JSON;
 
         $this->expectException(Framework\ExpectationFailedException::class);
 
-        $this->assertJsonStringSameAsJsonString($expected, $actual);
+        self::assertJsonStringSameAsJsonString($expected, $actual);
     }
 
     public function testAssertJsonStringSameAsJsonStringFailsWhenActualIsNotJson(): void
@@ -54,7 +58,7 @@ JSON;
 
         $this->expectException(Framework\ExpectationFailedException::class);
 
-        $this->assertJsonStringSameAsJsonString($expected, $actual);
+        self::assertJsonStringSameAsJsonString($expected, $actual);
     }
 
     public function testAssertJsonStringSameAsJsonStringFailsWhenExpectedAndActualAreNotJson(): void
@@ -63,7 +67,7 @@ JSON;
 
         $this->expectException(Framework\ExpectationFailedException::class);
 
-        $this->assertJsonStringSameAsJsonString($value, $value);
+        self::assertJsonStringSameAsJsonString($value, $value);
     }
 
     public function testJsonStringSameAsJsonStringFailsWhenActualIsNotSameAsExpected(): void
@@ -83,7 +87,7 @@ JSON;
 JSON;
         $this->expectException(Framework\ExpectationFailedException::class);
 
-        $this->assertJsonStringSameAsJsonString($actual, $expected);
+        self::assertJsonStringSameAsJsonString($actual, $expected);
     }
 
     public function testJsonStringSameAsJsonStringSucceedsWhenExpectedAndActualAreTheSame(): void
@@ -95,6 +99,6 @@ JSON;
 }
 JSON;
 
-        $this->assertJsonStringSameAsJsonString($value, $value);
+        self::assertJsonStringSameAsJsonString($value, $value);
     }
 }

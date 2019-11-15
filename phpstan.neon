@@ -1,8 +1,17 @@
 includes:
+	- vendor/localheinz/phpstan-rules/rules.neon
+	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
 	- vendor/phpstan/phpstan-strict-rules/rules.neon
+	- vendor/phpstan/phpstan/conf/bleedingEdge.neon
+	- vendor/phpstan/phpstan/conf/config.levelmax.neon
 
 parameters:
+	classesAllowedToBeExtended:
+		- PHPUnit\Framework\Constraint\Constraint
 	ignoreErrors:
-		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\IsIdenticalJson::additionalFailureDescription\(\) has parameter \$other with no typehint specified.#'
-		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\IsIdenticalJson::failureDescription\(\) has parameter \$other with no typehint specified.#'
-		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\IsIdenticalJson::matches\(\) has parameter \$other with no typehint specified.#'
+		- '#Method Localheinz\\PHPUnit\\Framework\\Constraint\\Test\\Unit\\ProviderTest::assertJsonStringSameAsJsonString\(\) is protected, but since the containing class is final, it can be private\.#'
+	inferPrivatePropertyTypeFromConstructor: true
+	paths:
+		- src
+		- test
+	tmpDir: %currentWorkingDirectory%/.build/phpstan

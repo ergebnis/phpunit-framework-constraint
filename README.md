@@ -1,6 +1,6 @@
 # phpunit-framework-constraint
 
-[![Build Status](https://travis-ci.com/localheinz/phpunit-framework-constraint.svg?branch=master)](https://travis-ci.com/localheinz/phpunit-framework-constraint)
+[![Continuous Integration](https://github.com/localheinz/phpunit-framework-constraint/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/phpunit-framework-constraintactions)
 [![codecov](https://codecov.io/gh/localheinz/phpunit-framework-constraint/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/phpunit-framework-constraint)
 [![Latest Stable Version](https://poser.pugx.org/localheinz/phpunit-framework-constraint/v/stable)](https://packagist.org/packages/localheinz/phpunit-framework-constraint)
 [![Total Downloads](https://poser.pugx.org/localheinz/phpunit-framework-constraint/downloads)](https://packagist.org/packages/localheinz/phpunit-framework-constraint)
