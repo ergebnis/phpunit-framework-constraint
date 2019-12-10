@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Localheinz\PHPUnit\Framework\Constraint\Test\Unit;
 
+use Ergebnis\Test\Util\Helper;
 use Localheinz\PHPUnit\Framework\Constraint\Provider;
-use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
@@ -31,7 +31,7 @@ final class ProviderTest extends Framework\TestCase
 
     public function testAssertJsonStringSameAsJsonStringFailsWhenExpectedIsNotJson(): void
     {
-        $expected = $this->faker()->sentence;
+        $expected = self::faker()->sentence;
 
         $actual = <<<'JSON'
 {
@@ -54,7 +54,7 @@ JSON;
 }
 JSON;
 
-        $actual = $this->faker()->sentence;
+        $actual = self::faker()->sentence;
 
         $this->expectException(Framework\ExpectationFailedException::class);
 
@@ -63,7 +63,7 @@ JSON;
 
     public function testAssertJsonStringSameAsJsonStringFailsWhenExpectedAndActualAreNotJson(): void
     {
-        $value = $this->faker()->sentence;
+        $value = self::faker()->sentence;
 
         $this->expectException(Framework\ExpectationFailedException::class);
 

@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Localheinz\PHPUnit\Framework\Constraint\Test\AutoReview;
 
-use Localheinz\Test\Util\Helper;
+use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
@@ -27,7 +27,7 @@ final class SrcCodeTest extends Framework\TestCase
 
     public function testSrcClassesHaveUnitTests(): void
     {
-        $this->assertClassesHaveTests(
+        self::assertClassesHaveTests(
             __DIR__ . '/../../src',
             'Localheinz\\PHPUnit\\Framework\\Constraint\\',
             'Localheinz\\PHPUnit\\Framework\\Constraint\\Test\\Unit\\'
