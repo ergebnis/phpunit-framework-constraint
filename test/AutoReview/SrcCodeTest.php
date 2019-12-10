@@ -8,10 +8,10 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/phpunit-framework-constraint
+ * @see https://github.com/ergebnis/phpunit-framework-constraint
  */
 
-namespace Localheinz\PHPUnit\Framework\Constraint\Test\AutoReview;
+namespace Ergebnis\PHPUnit\Framework\Constraint\Test\AutoReview;
 
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
@@ -29,8 +29,8 @@ final class SrcCodeTest extends Framework\TestCase
     {
         self::assertClassesHaveTests(
             __DIR__ . '/../../src',
-            'Localheinz\\PHPUnit\\Framework\\Constraint\\',
-            'Localheinz\\PHPUnit\\Framework\\Constraint\\Test\\Unit\\'
+            'Ergebnis\\PHPUnit\\Framework\\Constraint\\',
+            'Ergebnis\\PHPUnit\\Framework\\Constraint\\Test\\Unit\\'
         );
     }
 }

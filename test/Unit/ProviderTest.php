@@ -8,21 +8,21 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/phpunit-framework-constraint
+ * @see https://github.com/ergebnis/phpunit-framework-constraint
  */
 
-namespace Localheinz\PHPUnit\Framework\Constraint\Test\Unit;
+namespace Ergebnis\PHPUnit\Framework\Constraint\Test\Unit;
 
+use Ergebnis\PHPUnit\Framework\Constraint\Provider;
 use Ergebnis\Test\Util\Helper;
-use Localheinz\PHPUnit\Framework\Constraint\Provider;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Localheinz\PHPUnit\Framework\Constraint\Provider
+ * @covers \Ergebnis\PHPUnit\Framework\Constraint\Provider
  *
- * @uses \Localheinz\PHPUnit\Framework\Constraint\IsIdenticalJson
+ * @uses \Ergebnis\PHPUnit\Framework\Constraint\IsIdenticalJson
  */
 final class ProviderTest extends Framework\TestCase
 {

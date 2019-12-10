@@ -8,20 +8,20 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/phpunit-framework-constraint
+ * @see https://github.com/ergebnis/phpunit-framework-constraint
  */
 
-namespace Localheinz\PHPUnit\Framework\Constraint\Test\Unit;
+namespace Ergebnis\PHPUnit\Framework\Constraint\Test\Unit;
 
+use Ergebnis\PHPUnit\Framework\Constraint\IsIdenticalJson;
 use Ergebnis\Test\Util\Helper;
-use Localheinz\PHPUnit\Framework\Constraint\IsIdenticalJson;
 use PHPUnit\Framework;
 use SebastianBergmann\Exporter;
 
 /**
  * @internal
  *
- * @covers \Localheinz\PHPUnit\Framework\Constraint\IsIdenticalJson
+ * @covers \Ergebnis\PHPUnit\Framework\Constraint\IsIdenticalJson
  */
 final class IsIdenticalJsonTest extends Framework\TestCase
 {
