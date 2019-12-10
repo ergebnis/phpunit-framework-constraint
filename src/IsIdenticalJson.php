@@ -30,8 +30,6 @@ final class IsIdenticalJson extends Framework\Constraint\Constraint
 
     public function __construct(string $value)
     {
-        parent::__construct();
-
         $this->differ = new Diff\Differ(new Diff\Output\UnifiedDiffOutputBuilder("\n--- Expected\n+++ Actual\n"));
         $this->value = $value;
     }
@@ -40,7 +38,7 @@ final class IsIdenticalJson extends Framework\Constraint\Constraint
     {
         return \sprintf(
             'is identical to "%s"',
-            $this->exporter->export($this->value)
+            $this->exporter()->export($this->value)
         );
     }
 

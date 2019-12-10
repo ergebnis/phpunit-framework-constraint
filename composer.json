@@ -17,8 +17,8 @@
   ],
   "require": {
     "php": "^7.2",
-    "phpunit/phpunit": "^7.5.17",
-    "sebastian/diff": "^3.0.0"
+    "phpunit/phpunit": "^8.5.0",
+    "sebastian/diff": "^3.0.2"
   },
   "require-dev": {
     "ergebnis/php-cs-fixer-config": "~1.1.0",
