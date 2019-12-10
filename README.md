@@ -1,9 +1,9 @@
 # phpunit-framework-constraint
 
-[![Continuous Integration](https://github.com/localheinz/phpunit-framework-constraint/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/phpunit-framework-constraintactions)
-[![Code Coverage](https://codecov.io/gh/localheinz/phpunit-framework-constraint/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/phpunit-framework-constraint)
-[![Latest Stable Version](https://poser.pugx.org/localheinz/phpunit-framework-constraint/v/stable)](https://packagist.org/packages/localheinz/phpunit-framework-constraint)
-[![Total Downloads](https://poser.pugx.org/localheinz/phpunit-framework-constraint/downloads)](https://packagist.org/packages/localheinz/phpunit-framework-constraint)
+[![Continuous Integration](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/phpunit-framework-constraintactions)
+[![Code Coverage](https://codecov.io/gh/ergebnis/phpunit-framework-constraint/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/phpunit-framework-constraint)
+[![Latest Stable Version](https://poser.pugx.org/ergebnis/phpunit-framework-constraint/v/stable)](https://packagist.org/packages/ergebnis/phpunit-framework-constraint)
+[![Total Downloads](https://poser.pugx.org/ergebnis/phpunit-framework-constraint/downloads)](https://packagist.org/packages/ergebnis/phpunit-framework-constraint)
 
 Provides additional constraints for [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit).
 
@@ -12,12 +12,12 @@ Provides additional constraints for [`phpunit/phpunit`](https://github.com/sebas
 Run
 
 ```
-$ composer require localheinz/phpunit-framework-constraint
+$ composer require ergebnis/phpunit-framework-constraint
 ```
 
 ## Usage
 
-Import the `Localheinz\PHPUnit\Framework\Constraint\Provider` trait into your test class:
+Import the `Ergebnis\PHPUnit\Framework\Constraint\Provider` trait into your test class:
 
 ```php
 <?php
@@ -26,7 +26,7 @@ declare(strict_types=1);
 
 namespace Foo\Bar\Test\Unit;
 
-use Localheinz\PHPUnit\Framework\Constraint\Provider;
+use Ergebnis\PHPUnit\Framework\Constraint\Provider;
 use PHPUnit\Framework\TestCase;
 
 final class BazTest extends TestCase

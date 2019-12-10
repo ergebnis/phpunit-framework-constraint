@@ -3,7 +3,7 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Method Localheinz\\\\PHPUnit\\\\Framework\\\\Constraint\\\\Test\\\\Unit\\\\ProviderTest\\:\\:assertJsonStringSameAsJsonString\\(\\) is protected, but since the containing class is final, it can be private\\.$#"
+			message: "#^Method Ergebnis\\\\PHPUnit\\\\Framework\\\\Constraint\\\\Test\\\\Unit\\\\ProviderTest\\:\\:assertJsonStringSameAsJsonString\\(\\) is protected, but since the containing class is final, it can be private\\.$#"
 			count: 1
 			path: test/Unit/ProviderTest.php
 

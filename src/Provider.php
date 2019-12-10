@@ -8,10 +8,10 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/phpunit-framework-constraint
+ * @see https://github.com/ergebnis/phpunit-framework-constraint
  */
 
-namespace Localheinz\PHPUnit\Framework\Constraint;
+namespace Ergebnis\PHPUnit\Framework\Constraint;
 
 trait Provider
 {

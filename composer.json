@@ -1,5 +1,5 @@
 {
-  "name": "localheinz/phpunit-framework-constraint",
+  "name": "ergebnis/phpunit-framework-constraint",
   "type": "library",
   "description": "Provides additional constraints and assertions for phpunit/phpunit",
   "keywords": [
@@ -7,7 +7,7 @@
     "assertion",
     "constraint"
   ],
-  "homepage": "https://github.com/localheinz/phpunit-framework-constraint",
+  "homepage": "https://github.com/ergebnis/phpunit-framework-constraint",
   "license": "MIT",
   "authors": [
     {
@@ -37,16 +37,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Localheinz\\PHPUnit\\Framework\\Constraint\\": "src/"
+      "Ergebnis\\PHPUnit\\Framework\\Constraint\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Localheinz\\PHPUnit\\Framework\\Constraint\\Test\\": "test/"
+      "Ergebnis\\PHPUnit\\Framework\\Constraint\\Test\\": "test/"
     }
   },
   "support": {
-    "issues": "https://github.com/localheinz/phpunit-framework-constraint/issues",
-    "source": "https://github.com/localheinz/phpunit-framework-constraint"
+    "issues": "https://github.com/ergebnis/phpunit-framework-constraint/issues",
+    "source": "https://github.com/ergebnis/phpunit-framework-constraint"
   }
 }
