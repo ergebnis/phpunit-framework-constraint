@@ -20,9 +20,6 @@
     "phpunit/phpunit": "^8.5.0",
     "sebastian/diff": "^3.0.2"
   },
-  "replace": {
-    "localheinz/phpunit-framework-constraint": "*"
-  },
   "require-dev": {
     "ergebnis/php-cs-fixer-config": "~1.1.0",
     "ergebnis/phpstan-rules": "~0.14.0",
