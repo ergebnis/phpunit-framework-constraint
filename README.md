@@ -2,8 +2,10 @@
 
 [![Continuous Deployment](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
 [![Continuous Integration](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
+
 [![Code Coverage](https://codecov.io/gh/ergebnis/phpunit-framework-constraint/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/phpunit-framework-constraint)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/phpunit-framework-constraint/coverage.svg)](https://shepherd.dev/github/ergebnis/phpunit-framework-constraint)
+
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/phpunit-framework-constraint/v/stable)](https://packagist.org/packages/ergebnis/phpunit-framework-constraint)
 [![Total Downloads](https://poser.pugx.org/ergebnis/phpunit-framework-constraint/downloads)](https://packagist.org/packages/ergebnis/phpunit-framework-constraint)
 
@@ -58,4 +60,4 @@ Please have a look at [`CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md).
 
 ## License
 
-This package is licensed using the MIT License.
+This package is licensed using the [MIT License](LICENSE.md).
