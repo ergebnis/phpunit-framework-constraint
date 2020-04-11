@@ -1,7 +1,9 @@
 # phpunit-framework-constraint
 
-[![Continuous Deployment](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
-[![Continuous Integration](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
+[![Integrate](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Integrate/badge.svg?branch=master)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
+[![Prune](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Prune/badge.svg?branch=master)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
+[![Release](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
+[![Renew](https://github.com/ergebnis/phpunit-framework-constraint/workflows/Renew/badge.svg?branch=master)](https://github.com/ergebnis/phpunit-framework-constraint/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/phpunit-framework-constraint/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/phpunit-framework-constraint)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/phpunit-framework-constraint/coverage.svg)](https://shepherd.dev/github/ergebnis/phpunit-framework-constraint)
@@ -52,12 +54,14 @@ Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Contributing
 
-Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github/blob/master/CODE_OF_CONDUCT.md).
+Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
 
 ## Code of Conduct
 
-Please have a look at [`CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md).
+Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
-This package is licensed using the [MIT License](LICENSE.md).
+This package is licensed using the MIT License.
+
+Please have a look at [`LICENSE.md`](LICENSE.md).
