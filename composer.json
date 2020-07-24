@@ -17,7 +17,7 @@
   ],
   "require": {
     "php": "^7.2",
-    "phpunit/phpunit": "^8.5.0",
+    "phpunit/phpunit": "^8.5.8",
     "sebastian/diff": "^3.0.2"
   },
   "require-dev": {
