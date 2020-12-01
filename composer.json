@@ -18,7 +18,7 @@
   "require": {
     "php": "^7.2",
     "phpunit/phpunit": "^8.5.8",
-    "sebastian/diff": "^3.0.2"
+    "sebastian/diff": "^3.0.3"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.9.0",
